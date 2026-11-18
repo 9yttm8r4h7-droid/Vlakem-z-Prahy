@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Úvod | Po kolejích z Prahy</title>
+    <meta name="description" content="Tipy na výlety vlakem z Prahy: Posázavský pacifik, Pražský semmering a lokálka do Mšena.">
+    <meta name="author" content="Filip Průša">
+    <!-- Hlavní adresa stránky pro vyhledávače. -->
+    <link rel="canonical" href="https://9yttm8r4h7-droid.github.io/Vlakem-z-Prahy/">
+    <meta name="theme-color" content="#244b3e">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <!-- Vzhled je společný pro všechny stránky. -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- defer spustí skript až po načtení HTML. -->
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#obsah">Přeskočit na obsah</a>
+    <!-- ZÁHLAVÍ A MENU: při změně navigace uprav všech sedm HTML souborů. -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand"><span class="brand-icon" aria-hidden="true">↟</span><span>Po kolejích <span class="brand-small">z Prahy</span></span></a>
+        <nav aria-label="Hlavní navigace">
+          <ul>
+            <li><a href="index.html" aria-current="page">Úvod</a></li>
+            <li><a href="vylety.html">Výlety</a></li>
+            <li><a href="pred-cestou.html">Před cestou</a></li>
+            <li><a href="o-webu.html">O webu a zdroje</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HLAVNÍ OBSAH: tato část se na jednotlivých stránkách liší. -->
+    <main id="obsah" class="container">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"> Výlety vlakem a malé odbočky</p>
+          <h1>Za město.<br>Po kolejích.</h1>
+          <p class="lead">Nemusíš na druhý konec republiky. Pár zastávek od Prahy čekají lokálky, výhledy a místa, kde se dá na chvíli vypnout.</p>
+          <div class="actions"><a href="vylety.html" class="button">Vybrat si výlet <span aria-hidden="true">↗</span></a><a href="pred-cestou.html" class="text-link">Co před cestou?</a></div>
+          <p class="hero-footnote">3 tipy na cestu <span aria-hidden="true">/</span> bez auta <span aria-hidden="true">/</span> z Prahy</p>
+        </div>
+        <figure class="hero-photo">
+          <img src="assets/semmering.jpg" alt="Červený historický motorový vůz na trati v pražských Hlubočepích" width="1280" height="780" fetchpriority="high">
+          <figcaption><span>01 / Pražský semmering</span><a href="semmering.html">Malý výlet, velké výhledy ↗</a></figcaption>
+        </figure>
+      </section>
+      <section class="home-trips" aria-labelledby="vylety-nadpis">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Kam to bude?</p>
+            <h2 id="vylety-nadpis">Tři směry. Tři různé dny.</h2>
+          </div>
+          <a href="vylety.html" class="text-link">Všechny výlety <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="trip-grid">
+          <!-- KARTA VÝLETU: data-trip je označení pro JS, data-duration je délka. -->
+          <article class="trip-card" data-trip="pacifik" data-duration="day">
+            <a href="pacifik.html" class="card-photo" aria-label="Prohlédnout výlet: Posázavský pacifik"><img src="assets/pacifik.jpg" alt="Kamenné oblouky Žampašského viaduktu mezi zalesněnými svahy" width="1280" height="852" loading="lazy"><span class="line-badge">Trať 210</span></a>
+            <div class="card-body">
+              <div class="eyebrow">Podél řeky <span aria-hidden="true">·</span> Na celý den</div>
+              <h3><a href="pacifik.html">Posázavský pacifik</a></h3>
+              <p>Tunely, řeka a kamenný viadukt. Výlet, při kterém má smysl zpomalit už ve vlaku.</p>
+              <p class="card-route">Praha – Vrané nad Vltavou – Čerčany</p>
+              <div class="card-bottom">
+                <a class="text-link" href="pacifik.html">Prohlédnout výlet <span aria-hidden="true">↗</span></a>
+                <button hidden class="save-button" data-save="pacifik" aria-pressed="false" aria-label="Uložit výlet: Posázavský pacifik" type="button" data-name="Posázavský pacifik">☆ Uložit</button>
+              </div>
+            </div>
+          </article>
+          <!-- KARTA VÝLETU: data-trip je označení pro JS, data-duration je délka. -->
+          <article class="trip-card" data-trip="semmering" data-duration="half">
+            <a href="semmering.html" class="card-photo" aria-label="Prohlédnout výlet: Pražský semmering"><img src="assets/semmering.jpg" alt="Červený historický motorový vůz na trati v pražských Hlubočepích" width="1280" height="780" loading="lazy"><span class="line-badge">Trať 122</span></a>
+            <div class="card-body">
+              <div class="eyebrow">Kousek od domova <span aria-hidden="true">·</span> Na půl dne</div>
+              <h3><a href="semmering.html">Pražský semmering</a></h3>
+              <p>Viadukty a výhledy na Prahu z trochu jiné perspektivy. Stačí volné odpoledne.</p>
+              <p class="card-route">Praha-Smíchov – Praha-Zličín</p>
+              <div class="card-bottom">
+                <a class="text-link" href="semmering.html">Prohlédnout výlet <span aria-hidden="true">↗</span></a>
+                <button hidden class="save-button" data-save="semmering" aria-pressed="false" aria-label="Uložit výlet: Pražský semmering" type="button" data-name="Pražský semmering">☆ Uložit</button>
+              </div>
+            </div>
+          </article>
+          <!-- KARTA VÝLETU: data-trip je označení pro JS, data-duration je délka. -->
+          <article class="trip-card" data-trip="mseno" data-duration="day">
+            <a href="mseno.html" class="card-photo" aria-label="Prohlédnout výlet: Lokálkou do Mšena"><img src="assets/mseno.jpg" alt="Modrobílý motorový vlak linky S33 ve stanici Mšeno" width="960" height="638" loading="lazy"><span class="line-badge">Trať 076</span></a>
+            <div class="card-body">
+              <div class="eyebrow">Za město <span aria-hidden="true">·</span> Na celý den</div>
+              <h3><a href="mseno.html">Lokálkou do Mšena</a></h3>
+              <p>Malá nádraží a vstupní brána do Kokořínska. Pro den, na který si chceš nechat čas.</p>
+              <p class="card-route">Mělník – Mšeno</p>
+              <div class="card-bottom">
+                <a class="text-link" href="mseno.html">Prohlédnout výlet <span aria-hidden="true">↗</span></a>
+                <button hidden class="save-button" data-save="mseno" aria-pressed="false" aria-label="Uložit výlet: Lokálkou do Mšena" type="button" data-name="Lokálkou do Mšena">☆ Uložit</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="photo-note">Dočasné fotografie z Wikimedia Commons. <a href="o-webu.html#fotografie">Autoři a licence</a></p>
+      </section>
+      <section class="note-strip">
+        <div>
+          <h2>Nejdřív tip. Potom jízdní řád.</h2>
+          <p>Tady najdeš nápad na trasu. Konkrétní odjezdy, přestupy a výluky si před cestou ověř u dopravce.</p>
+        </div>
+        <a href="pred-cestou.html" class="text-link">Připravit se na cestu</a>
+      </section>
+    </main>
+    <!-- ZÁPATÍ: společná identifikace webu, viditelná také při tisku. -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="footer-brand" href="index.html">Po kolejích z Prahy</a>
+          <p>Malý průvodce cestami, které začínají na nádraží.</p>
+        </div>
+        <div>
+          <p>Studentský projekt · Filip Průša · 2026</p>
+          <a href="o-webu.html#fotografie">Fotografie a jejich autoři</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

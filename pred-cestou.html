@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Před cestou | Po kolejích z Prahy</title>
+    <meta name="description" content="Seznam věcí před výletem vlakem, odkazy na spojení a praktické rady pro cestu.">
+    <meta name="author" content="Filip Průša">
+    <!-- Hlavní adresa stránky pro vyhledávače. -->
+    <link rel="canonical" href="https://9yttm8r4h7-droid.github.io/Vlakem-z-Prahy/pred-cestou.html">
+    <meta name="theme-color" content="#244b3e">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <!-- Vzhled je společný pro všechny stránky. -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- defer spustí skript až po načtení HTML. -->
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#obsah">Přeskočit na obsah</a>
+    <!-- ZÁHLAVÍ A MENU: při změně navigace uprav všech sedm HTML souborů. -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand"><span class="brand-icon" aria-hidden="true">↟</span><span>Po kolejích <span class="brand-small">z Prahy</span></span></a>
+        <nav aria-label="Hlavní navigace">
+          <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="vylety.html">Výlety</a></li>
+            <li><a href="pred-cestou.html" aria-current="page">Před cestou</a></li>
+            <li><a href="o-webu.html">O webu a zdroje</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HLAVNÍ OBSAH: tato část se na jednotlivých stránkách liší. -->
+    <main id="obsah" class="container">
+      <nav class="breadcrumb" aria-label="Drobečková navigace"><a href="index.html">Úvod</a><span aria-hidden="true"> / </span><span>Před cestou</span></nav>
+      <header class="page-heading">
+        <p class="eyebrow">Pár minut předem ušetří starosti</p>
+        <h1>Než vyrazíš</h1>
+        <p class="lead">Výlet nemusí mít rozpis na každou minutu. Pár věcí se ale vyplatí zkontrolovat ještě doma.</p>
+      </header>
+      <!-- columns vytvoří dva sloupce; na mobilu je CSS složí pod sebe. -->
+      <div class="columns">
+        <section>
+          <div class="section-heading">
+            <h2>Malý seznam před odjezdem</h2>
+            <span id="check-progress" class="small" role="status" hidden>0 z 6 hotovo</span>
+          </div>
+          <ul class="checklist">
+            <li>
+              <label for="check-spojeni"><input type="checkbox" id="check-spojeni" data-check="spojeni"><span><strong>Najít spojení tam i zpět</strong><span>Zkontroluj datum, nástupní stanici a čas na přestup.</span></span></label>
+            </li>
+            <li>
+              <label for="check-vyluky"><input type="checkbox" id="check-vyluky" data-check="vyluky"><span><strong>Podívat se na výluky</strong><span>Náhradní autobus může změnit cestu i místo odjezdu.</span></span></label>
+            </li>
+            <li>
+              <label for="check-jizdenka"><input type="checkbox" id="check-jizdenka" data-check="jizdenka"><span><strong>Vyřešit jízdenku</strong><span>Ověř tarif pro celý úsek a případné podmínky slevy.</span></span></label>
+            </li>
+            <li>
+              <label for="check-mapa"><input type="checkbox" id="check-mapa" data-check="mapa"><span><strong>Uložit mapu a návrat</strong><span>Hodí se i ve chvíli, kdy v údolí zmizí signál.</span></span></label>
+            </li>
+            <li>
+              <label for="check-vybava"><input type="checkbox" id="check-vybava" data-check="vybava"><span><strong>Přibalit vodu a něco k jídlu</strong><span>Přidej oblečení podle počasí a nabitý telefon.</span></span></label>
+            </li>
+            <li>
+              <label for="check-rezerva"><input type="checkbox" id="check-rezerva" data-check="rezerva"><span><strong>Nechat si časovou rezervu</strong><span>Poslední spoj raději nepoužívej jako jediný plán.</span></span></label>
+            </li>
+          </ul>
+          <div class="check-actions">
+            <button hidden id="reset-checklist" class="button secondary" type="button">Odškrtnout vše</button>
+            <button hidden data-print class="print-button" type="button">Vytisknout seznam</button>
+          </div>
+          <p class="small">S JavaScriptem si seznam pamatuje zaškrtnutí v tomto prohlížeči. Bez něj ho můžeš použít jako obyčejný seznam nebo vytisknout.</p>
+        </section>
+        <aside class="help-panel">
+          <p class="eyebrow">Užitečné adresy</p>
+          <h2>Kam se podívat</h2>
+          <ul class="resource-list">
+            <li>
+              <a href="https://www.cd.cz/spojeni-a-jizdenka/">České dráhy ↗</a>
+              <p>Vyhledání spojení a podrobnosti o vlaku.</p>
+            </li>
+            <li>
+              <a href="https://pid.cz/">Pražská integrovaná doprava ↗</a>
+              <p>Tarif, linky a aktuální informace v okolí Prahy.</p>
+            </li>
+            <li>
+              <a href="https://www.kzc.cz/">KŽC Doprava ↗</a>
+              <p>Historické motoráčky a jejich provozní omezení.</p>
+            </li>
+            <li>
+              <a href="https://mapy.com/">Mapy.com ↗</a>
+              <p>Pěší trasa od stanice a orientace v terénu.</p>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <section class="columns advice-section">
+        <div>
+          <h2>Když chceš fotit vlaky</h2>
+          <p>Vybírej veřejně přístupná místa mimo kolejiště. Nelez na mosty ani do tunelů a kvůli fotce nepřecházej trať mimo povolená místa. Vyhlídku si najdi v mapě ještě před cestou.</p>
+        </div>
+        <div>
+          <h2>Když něco nejede podle plánu</h2>
+          <p>Nejdřív zkontroluj informace dopravce. Měj uložený i další použitelný návrat a pěší trasu plánuj tak, aby šla zkrátit. Výlet může být dobrý i bez všech původních zastávek.</p>
+        </div>
+      </section>
+    </main>
+    <!-- ZÁPATÍ: společná identifikace webu, viditelná také při tisku. -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="footer-brand" href="index.html">Po kolejích z Prahy</a>
+          <p>Malý průvodce cestami, které začínají na nádraží.</p>
+        </div>
+        <div>
+          <p>Studentský projekt · Filip Průša · 2026</p>
+          <a href="o-webu.html#fotografie">Fotografie a jejich autoři</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
