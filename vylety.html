@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Výlety | Po kolejích z Prahy</title>
-    <meta name="description" content="Vyber si ze tří výletů vlakem z Prahy a filtruj podle času nebo uložených tipů.">
+    <meta name="description" content="Vyber si ze šesti výletů vlakem z Prahy a filtruj podle času nebo uložených tipů.">
     <meta name="author" content="Filip Průša">
     <!-- Hlavní adresa stránky pro vyhledávače. -->
     <link rel="canonical" href="https://9yttm8r4h7-droid.github.io/Vlakem-z-Prahy/vylety.html">
@@ -17,7 +17,7 @@
   </head>
   <body>
     <a class="skip" href="#obsah">Přeskočit na obsah</a>
-    <!-- ZÁHLAVÍ A MENU: při změně navigace uprav všech sedm HTML souborů. -->
+    <!-- ZÁHLAVÍ A MENU: při změně navigace uprav všech deset HTML souborů. -->
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="brand"><span class="brand-icon" aria-hidden="true">↟</span><span>Po kolejích <span class="brand-small">z Prahy</span></span></a>
@@ -47,7 +47,7 @@
         </div>
         <label class="favorite-filter"><input type="checkbox" id="favorites-only"> Jen uložené</label>
       </div>
-      <p class="results-count" id="results-count" role="status">3 výlety k prohlédnutí</p>
+      <p class="results-count" id="results-count" role="status">6 výletů k prohlédnutí</p>
       <div class="trip-grid">
         <!-- KARTA VÝLETU: data-trip je označení pro JS, data-duration je délka. -->
         <article class="trip-card" data-trip="pacifik" data-duration="day">
@@ -88,6 +88,45 @@
             <div class="card-bottom">
               <a class="text-link" href="mseno.html">Prohlédnout výlet <span aria-hidden="true">↗</span></a>
               <button hidden class="save-button" data-save="mseno" aria-pressed="false" aria-label="Uložit výlet: Lokálkou do Mšena" type="button" data-name="Lokálkou do Mšena">☆ Uložit</button>
+            </div>
+          </div>
+        </article>
+        <article class="trip-card" data-trip="dobris" data-duration="day">
+          <a href="dobris.html" class="card-photo" aria-label="Prohlédnout výlet: Posázavský dobris"><img src="assets/dobris.jpg" alt="Žlutá motorová jednotka Regionova u nástupiště v Dobříši" width="1280" height="960" loading="lazy"><span class="line-badge">Linka S88</span></a>
+          <div class="card-body">
+            <div class="eyebrow">Na konečnou <span aria-hidden="true">·</span> Na celý den</div>
+            <h2><a href="dobris.html">Posázavský dobris</a></h2>
+            <p>Přes Vrané a Čisovice až na konečnou. Z nádraží se můžeš vydat pěšky do Dobříše.</p>
+            <p class="card-route">Praha – Vrané nad Vltavou – Dobříš</p>
+            <div class="card-bottom">
+              <a class="text-link" href="dobris.html">Prohlédnout výlet <span aria-hidden="true">↗</span></a>
+              <button hidden class="save-button" data-save="dobris" aria-pressed="false" aria-label="Uložit výlet: Posázavský dobris" type="button" data-name="Posázavský dobris">☆ Uložit</button>
+            </div>
+          </div>
+        </article>
+        <article class="trip-card" data-trip="krivoklat" data-duration="day">
+          <a href="krivoklat.html" class="card-photo" aria-label="Prohlédnout výlet: Posázavský krivoklat"><img src="assets/krivoklat.jpg" alt="Železniční most přes Berounku v Roztokách u Křivoklátu" width="1280" height="960" loading="lazy"><span class="line-badge">Přes Beroun</span></a>
+          <div class="card-body">
+            <div class="eyebrow">K řece a na hrad <span aria-hidden="true">·</span> Na celý den</div>
+            <h2><a href="krivoklat.html">Posázavský krivoklat</a></h2>
+            <p>V Berouně přestoupíš na trať do Rakovníka. Cílem je Křivoklát a procházka k hradu.</p>
+            <p class="card-route">Praha – Beroun – Křivoklát</p>
+            <div class="card-bottom">
+              <a class="text-link" href="krivoklat.html">Prohlédnout výlet <span aria-hidden="true">↗</span></a>
+              <button hidden class="save-button" data-save="krivoklat" aria-pressed="false" aria-label="Uložit výlet: Posázavský krivoklat" type="button" data-name="Posázavský krivoklat">☆ Uložit</button>
+            </div>
+          </div>
+        </article>
+        <article class="trip-card" data-trip="kutna-hora" data-duration="day">
+          <a href="kutna-hora.html" class="card-photo" aria-label="Prohlédnout výlet: Posázavský kutna-hora"><img src="assets/kutna-hora.jpg" alt="Kolejiště a staniční budova nádraží Kutná Hora město" width="1280" height="960" loading="lazy"><span class="line-badge">Do města</span></a>
+          <div class="card-body">
+            <div class="eyebrow">Na procházku <span aria-hidden="true">·</span> Na celý den</div>
+            <h2><a href="kutna-hora.html">Posázavský kutna-hora</a></h2>
+            <p>Z hlavního nádraží pokračuj místním vlakem do stanice Kutná Hora město a pak pěšky do centra.</p>
+            <p class="card-route">Praha – Kutná Hora hl. n. – Kutná Hora město</p>
+            <div class="card-bottom">
+              <a class="text-link" href="kutna-hora.html">Prohlédnout výlet <span aria-hidden="true">↗</span></a>
+              <button hidden class="save-button" data-save="kutna-hora" aria-pressed="false" aria-label="Uložit výlet: Posázavský kutna-hora" type="button" data-name="Posázavský kutna-hora">☆ Uložit</button>
             </div>
           </div>
         </article>
